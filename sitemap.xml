@@ -2,13 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dowrave.github.io/post/</loc>
+    <lastmod>2022-04-21T16:34:45+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/</loc>
+    <lastmod>2022-04-21T16:34:45+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/post/test/</loc>
+    <lastmod>2022-04-21T16:34:45+09:00</lastmod>
+  </url><url>
     <loc>https://dowrave.github.io/readme/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://dowrave.github.io/categories/</loc>
   </url><url>
     <loc>https://dowrave.github.io/tags/</loc>
-  </url><url>
-    <loc>https://dowrave.github.io/</loc>
   </url>
 </urlset>

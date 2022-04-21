@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>기록하고 정리하는 블로그</title>
-    <link>https://dowrave.github.io/</link>
-    <description>Recent content on 기록하고 정리하는 블로그</description>
+    <title>Posts on 기록하고 정리하는 블로그</title>
+    <link>https://dowrave.github.io/post/</link>
+    <description>Recent content in Posts on 기록하고 정리하는 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 21 Apr 2022 16:34:45 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Apr 2022 16:34:45 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>실험용 게시글</title>
       <link>https://dowrave.github.io/post/test/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://dowrave.github.io/post/test/</guid>
       <description>import pandas as pd import numpy as np  train = pd.read_csv(&amp;#39;./train.csv&amp;#39;) test = pd.read_csv(&amp;#39;./test.csv&amp;#39;) 이것은 실험용 게시글입니다.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dowrave.github.io/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dowrave.github.io/readme/</guid>
-      <description>Hello World!</description>
     </item>
     
   </channel>
