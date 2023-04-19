@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>[Hugo] 공통 프론트매터 만들기 - Twae&#39;s Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="[Hugo] 공통 프론트매터 만들기" />
+<meta property="og:description" content="어떤 글을 작성할 때, 글과 글 목록의 인터페이스가 다른 경우가 있었다. 예를 들면 글 목록에서는 오른쪽 사이드바가 뜨는데, 글에 들어가면 오른쪽 사이드바가 뜨지 않는 경우가 있었다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dowrave.github.io/study/hugo_common_frontmatter/" /><meta property="article:section" content="Study" />
+<meta property="article:published_time" content="2023-04-19T16:33:57+09:00" />
+<meta property="article:modified_time" content="2023-04-19T16:33:57+09:00" />
+
+		<meta itemprop="name" content="[Hugo] 공통 프론트매터 만들기">
+<meta itemprop="description" content="어떤 글을 작성할 때, 글과 글 목록의 인터페이스가 다른 경우가 있었다. 예를 들면 글 목록에서는 오른쪽 사이드바가 뜨는데, 글에 들어가면 오른쪽 사이드바가 뜨지 않는 경우가 있었다."><meta itemprop="datePublished" content="2023-04-19T16:33:57+09:00" />
+<meta itemprop="dateModified" content="2023-04-19T16:33:57+09:00" />
+<meta itemprop="wordCount" content="132">
+<meta itemprop="keywords" content="Hugo," />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Nanum+Gothic+Coding:wght@700&display=swap">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="겜덕의 데이터 공부" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">겜덕의 데이터 공부</div>
+					<div class="logo__tagline">어디로 가야 하오</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item menu__item--active">
+			<a class="menu__link" href="/study/">
+				
+				<span class="menu__text">Studies</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">[Hugo] 공통 프론트매터 만들기</h1>
+			<p class="post__lead">hugo new 명령어로 새 글 작성 시 뜨는 프론트매터 수정하기</p>
+			
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-04-19T16:33:57&#43;09:00">2023-04-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<ul>
+<li>어떤 글을 작성할 때, 글과 글 목록의 인터페이스가 다른 경우가 있었다. 예를 들면 글 목록에서는 오른쪽 사이드바가 뜨는데, 글에 들어가면 오른쪽 사이드바가 뜨지 않는 경우가 있었다.</li>
+<li><code>mainroad</code> 테마의 경우, 글 페이지에서의 사이드바는 <code>프론트매터</code>에서 관리되고 있다.</li>
+</ul>
+<hr>
+<h4 id="1-hugo-new-폴더이름문서이름md를-쉘에서-입력하고-파일을-연다">1. <code>hugo new &lt;폴더이름&gt;/&lt;문서이름.md&gt;</code>를 쉘에서 입력하고 파일을 연다.</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Test3&#34;
+</span></span><span style="display:flex;"><span>date: &#34;2023-04-19T16:48:04+09:00&#34;
+</span></span><span style="display:flex;"><span>draft: true
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><ul>
+<li>글의 상단에 <code>---</code>로 감싸져 있는 부분이 <code>프론트매터</code>이며, 여기서 페이지를 조절할 수 있다.</li>
+</ul>
+<h4 id="2-mainroad-테마는-공식-레포지토리httpsgithubcomvimuxmainroadfront-matter-example에-프론트매터에-들어갈-패러미터-예시가-있다">2. <code>mainroad</code> 테마는 <a href="https://github.com/Vimux/Mainroad#front-matter-example">공식 레포지토리</a>에 프론트매터에 들어갈 패러미터 예시가 있다.</h4>
+<p><img src="/images/mainroad_frontmatter.png" alt="프론트매터"></p>
+<ul>
+<li><code>Common-Defined Params</code>만으로 참고가 될 것이다.</li>
+<li>다른 테마의 구조를 변경하고 싶다면 테마 문서에서 찾아보자.</li>
+</ul>
+<h4 id="3-configtoml-수정하기">3. <code>config.toml</code> 수정하기</h4>
+<ul>
+<li>기본적으로 프론트매터는 <code>&lt;프로젝트명&gt;/archetypes/default.md</code> 혹은 <code>&lt;프로젝트명&gt;/themes/&lt;테마명&gt;/archetypes.default.md</code>에서 관리되는 것 같다.</li>
+<li>내 경우 전자의 <code>default.md</code>는 없었고 후자에는 있었는데, 이를 수정했다.</li>
+<li>수정을 끝냈다면, <code>config.toml</code> 파일에서 <code>themes/&lt;테마이름&gt;/archetypes</code> 경로를 지정해준다.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config.toml</span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">archetypeDir</span> = <span style="color:#e6db74">&#34;themes/mainroad/archetypes&#34;</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><h4 id="4-결과-확인하기">4. 결과 확인하기</h4>
+<ul>
+<li><code>hugo new &lt;폴더이름&gt;/&lt;문서이름.md&gt;</code>를 입력해서 지정한 프론트매터가 잘 뜨는지 확인한다.</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/study/isprime/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">[Python]소수 판별하기</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%86%8C%EC%88%98/" title="소수">소수</a>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/hugo/">Hugo</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%EC%BD%94%ED%85%8C/">코테</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/dowrave" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:dowrave@gmail.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>dowrave@gmail.com</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 Twae&#39;s Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -67,6 +67,7 @@ body {
 .wrapper {
 	padding: 25px;
 	background: #fff;
+	/* background: #29c6ff; */
 }
 
 .flex {
@@ -134,7 +135,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 /* Animation */
@@ -193,7 +194,7 @@ a {
 }
 
 a:hover {
-	color: #6dd7fd;
+	color: #009cd4;
 }
 
 hr {
@@ -254,7 +255,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: 'Nanum Gothic Coding';
 	font-size: inherit;
 }
 
@@ -265,8 +266,13 @@ code {
 }
 
 code {
-	padding: 0 5px;
-	color: #c33;
+	/* padding: 100 2px; */
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #ef6800;
+	font-size: .85rem;
 }
 
 pre {
@@ -299,7 +305,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid #6dd7fd;
+	border-left: 5px solid #009cd4;
 }
 
 blockquote p:last-child {
@@ -316,8 +322,8 @@ sub {
 	font-size: .625rem;
 	font-style: normal;
 }
-
 sup {
+
 	vertical-align: super;
 }
 
@@ -431,14 +437,14 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: #6dd7fd;
+	color: #009cd4;
 	border-top: 1px solid #ebebeb;
 }
 
 .divider {
 	height: 5px;
 	margin: 0;
-	background: #6dd7fd;
+	background: #009cd4;
 	border: 0;
 }
 
@@ -475,7 +481,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px #6dd7fd;
+	box-shadow: inset 0 0 1px 3px #009cd4;
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -488,7 +494,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: #6dd7fd;
+	color: #009cd4;
 }
 
 .menu__list {
@@ -497,7 +503,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 .menu__item:first-child {
@@ -505,7 +511,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 .menu__link {
@@ -546,7 +552,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid #6dd7fd;
+		border-bottom: 5px solid #009cd4;
 	}
 
 	.menu__btn {
@@ -600,7 +606,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: #6dd7fd;
+	color: #009cd4;
 }
 
 .meta__item {
@@ -639,8 +645,9 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-top: .25rem;
 	margin-bottom: 0;
 	font-size: 16px;
-	font-size: 1rem;
-	font-style: italic;
+	font-size: 0.95rem;
+	/* font-style: italic; */
+	color: #009cd4;
 }
 
 .post__thumbnail {
@@ -657,13 +664,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .warning a,
 .authorbox__description a {
 	font-weight: 700;
-	color: #6dd7fd;
+	color: #009cd4;
 }
 
 .content a:hover,
 .warning a:hover,
 .authorbox__description a:hover {
-	color: #6dd7fd;
+	color: #009cd4;
 	text-decoration: underline;
 }
 
@@ -745,7 +752,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 .tags__link,
@@ -760,7 +767,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: #6dd7fd;
+	background: #009cd4;
 	fill: #fff;
 }
 
@@ -822,7 +829,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: #6dd7fd;
+	color: #009cd4;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -910,7 +917,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 /* Pager (prev/next links) navigation */
@@ -1032,7 +1039,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 textarea {
@@ -1061,7 +1068,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid #6dd7fd;
+	border-bottom: 3px solid #009cd4;
 }
 
 .widget__item {
@@ -1150,7 +1157,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: #6dd7fd;
+	background: #009cd4;
 }
 
 .widget-languages__link-btn {
