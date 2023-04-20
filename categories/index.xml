@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Twae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 19 Apr 2023 16:33:57 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Apr 2023 14:32:30 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코테</title>
+      <link>https://dowrave.github.io/categories/%EC%BD%94%ED%85%8C/</link>
+      <pubDate>Thu, 20 Apr 2023 14:32:30 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/categories/%EC%BD%94%ED%85%8C/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>https://dowrave.github.io/categories/hugo/</link>
       <pubDate>Wed, 19 Apr 2023 16:33:57 +0900</pubDate>
       
       <guid>https://dowrave.github.io/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>코테</title>
-      <link>https://dowrave.github.io/categories/%EC%BD%94%ED%85%8C/</link>
-      <pubDate>Tue, 18 Apr 2023 18:06:43 +0900</pubDate>
-      
-      <guid>https://dowrave.github.io/categories/%EC%BD%94%ED%85%8C/</guid>
       <description></description>
     </item>
     

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Twae&#39;s Blog</title>
-    <link>https://dowrave.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Twae&#39;s Blog</description>
+    <title>CS on Twae&#39;s Blog</title>
+    <link>https://dowrave.github.io/cs/</link>
+    <description>Recent content in CS on Twae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 19 Apr 2023 16:33:57 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Apr 2023 14:32:30 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Python] 정렬(Sort)</title>
+      <link>https://dowrave.github.io/cs/sort/</link>
+      <pubDate>Thu, 20 Apr 2023 14:32:30 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/cs/sort/</guid>
+      <description>워낙 설명이 잘 되어 있는 블로그가 많기 때문에 코드만 정리해둔다.</description>
+    </item>
+    
     <item>
       <title>[Hugo] 공통 프론트매터 만들기</title>
       <link>https://dowrave.github.io/cs/hugo_common_frontmatter/</link>
@@ -14,6 +23,15 @@
       
       <guid>https://dowrave.github.io/cs/hugo_common_frontmatter/</guid>
       <description>어떤 글을 작성할 때, 글과 글 목록의 인터페이스가 다른 경우가 있었다.</description>
+    </item>
+    
+    <item>
+      <title>[Python]소수 판별하기</title>
+      <link>https://dowrave.github.io/cs/isprime/</link>
+      <pubDate>Tue, 18 Apr 2023 18:06:43 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/cs/isprime/</guid>
+      <description>에라토스체네스의 체 어떤 수(N)까지의 소수 리스트 구하기 2부터 찾고자 하는 수까지를 모두 나열한다.</description>
     </item>
     
     <item>

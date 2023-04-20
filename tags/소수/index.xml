@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 18 Apr 2023 18:06:43 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/tags/%EC%86%8C%EC%88%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Python]소수 판별하기</title>
-      <link>https://dowrave.github.io/study/isprime/</link>
+      <link>https://dowrave.github.io/cs/isprime/</link>
       <pubDate>Tue, 18 Apr 2023 18:06:43 +0900</pubDate>
       
-      <guid>https://dowrave.github.io/study/isprime/</guid>
-      <description>에라토스체네스의 체 어떤 수(N)까지의 소수 리스트 구하기 2부터 찾고자 하는 수까지를 모두 나열한다. 2부터 시작해서, 자신은 포함하되 자기 자신의 배수는 모두 제외한다.</description>
+      <guid>https://dowrave.github.io/cs/isprime/</guid>
+      <description>에라토스체네스의 체 어떤 수(N)까지의 소수 리스트 구하기 2부터 찾고자 하는 수까지를 모두 나열한다.</description>
     </item>
     
   </channel>

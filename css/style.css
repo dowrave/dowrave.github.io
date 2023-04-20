@@ -306,6 +306,7 @@ blockquote {
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
 	border-left: 5px solid #009cd4;
+	color: #b1b1b1;
 }
 
 blockquote p:last-child {
