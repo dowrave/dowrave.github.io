@@ -9,19 +9,19 @@
     <lastBuildDate>Wed, 19 Apr 2023 16:33:57 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Hugo] 공통 프론트매터 만들기</title>
-      <link>https://dowrave.github.io/cs/hugo_common_frontmatter/</link>
+      <link>https://dowrave.github.io/study/hugo_common_frontmatter/</link>
       <pubDate>Wed, 19 Apr 2023 16:33:57 +0900</pubDate>
       
-      <guid>https://dowrave.github.io/cs/hugo_common_frontmatter/</guid>
+      <guid>https://dowrave.github.io/study/hugo_common_frontmatter/</guid>
       <description>어떤 글을 작성할 때, 글과 글 목록의 인터페이스가 다른 경우가 있었다.</description>
     </item>
     
     <item>
       <title>[Hugo]깃허브 블로그 만들기</title>
-      <link>https://dowrave.github.io/cs/hugoblog/</link>
+      <link>https://dowrave.github.io/study/hugoblog/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://dowrave.github.io/cs/hugoblog/</guid>
+      <guid>https://dowrave.github.io/study/hugoblog/</guid>
       <description>이 블로그는 Hugo의 Mainroad 테마로 만들어졌고, 깃허브에 연결되어 있다. 잘 설명된 글이 구글에 검색하면 바로 나오고, 따라가면 되는데 이상하게 깃허브랑 잇는 과정에서 자꾸 오류가 발생해서 정리해둔다.</description>
     </item>
     

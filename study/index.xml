@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Twae&#39;s Blog</title>
-    <link>https://dowrave.github.io/</link>
-    <description>Recent content on Twae&#39;s Blog</description>
+    <title>Studies on Twae&#39;s Blog</title>
+    <link>https://dowrave.github.io/study/</link>
+    <description>Recent content in Studies on Twae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 21 Apr 2023 18:05:17 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 18:05:17 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Python] 팩토리얼</title>
       <link>https://dowrave.github.io/study/factorial/</link>
@@ -69,15 +69,6 @@ def dfs(node): visited[start_node] = 1 for i in graph[start_node]: if visited[i]
       
       <guid>https://dowrave.github.io/study/hugoblog/</guid>
       <description>이 블로그는 Hugo의 Mainroad 테마로 만들어졌고, 깃허브에 연결되어 있다. 잘 설명된 글이 구글에 검색하면 바로 나오고, 따라가면 되는데 이상하게 깃허브랑 잇는 과정에서 자꾸 오류가 발생해서 정리해둔다.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dowrave.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dowrave.github.io/about/</guid>
-      <description></description>
     </item>
     
   </channel>

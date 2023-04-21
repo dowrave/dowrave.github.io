@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>팩토리얼 on Twae&#39;s Blog</title>
+    <link>https://dowrave.github.io/tags/%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/</link>
+    <description>Recent content in 팩토리얼 on Twae&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 21 Apr 2023 18:05:17 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/tags/%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Python] 팩토리얼</title>
+      <link>https://dowrave.github.io/study/factorial/</link>
+      <pubDate>Fri, 21 Apr 2023 18:05:17 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/study/factorial/</guid>
+      <description>1. 팩토리얼 $N ! = N \times (N - 1) \times &amp;hellip; \times 2 \times 1 $</description>
+    </item>
+    
+  </channel>
+</rss>

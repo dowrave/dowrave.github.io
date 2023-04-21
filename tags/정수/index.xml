@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>정수 on Twae&#39;s Blog</title>
+    <link>https://dowrave.github.io/tags/%EC%A0%95%EC%88%98/</link>
+    <description>Recent content in 정수 on Twae&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 21 Apr 2023 17:34:29 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/tags/%EC%A0%95%EC%88%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Python] 최대공약수와 최소공배수</title>
+      <link>https://dowrave.github.io/study/gcd_lcm/</link>
+      <pubDate>Fri, 21 Apr 2023 17:34:29 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/study/gcd_lcm/</guid>
+      <description>1. 최대공약수 구하기 GCD : Greatest Common Divisor라고 한단다. 어떤 두 자연수가 있을 때, 이들의 최대공약수를 구하는 법으로 유클리드 호제법Euclidian Algorithm이라는 게 있다.</description>
+    </item>
+    
+  </channel>
+</rss>
