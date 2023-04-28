@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandas on Twae&#39;s Blog</title>
+    <link>https://dowrave.github.io/tags/pandas/</link>
+    <description>Recent content in Pandas on Twae&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 28 Apr 2023 18:50:15 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Pandas] inplace</title>
+      <link>https://dowrave.github.io/study/pandas_inplace/</link>
+      <pubDate>Fri, 28 Apr 2023 18:50:15 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/study/pandas_inplace/</guid>
+      <description>요약 inplace = True는 데이터프레임에 직접 접근해서 바로 수정한다.(권장X) inplace = False는 연산 결과를 따로 갖고 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dowrave.github.io/study/pandas_inplace/</loc>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
+  </url><url>
     <loc>https://dowrave.github.io/categories/</loc>
-    <lastmod>2023-04-25T16:19:21+09:00</lastmod>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/tags/pandas/</loc>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/categories/pandas/</loc>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/tags/python/</loc>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/study/</loc>
-    <lastmod>2023-04-25T16:19:21+09:00</lastmod>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/tags/</loc>
-    <lastmod>2023-04-25T16:19:21+09:00</lastmod>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/tags/til/</loc>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/</loc>
-    <lastmod>2023-04-25T16:19:21+09:00</lastmod>
+    <lastmod>2023-04-28T18:50:15+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/tags/%EA%B7%B8%EB%9E%98%ED%94%84/</loc>
     <lastmod>2023-04-25T16:19:21+09:00</lastmod>
@@ -27,9 +42,6 @@
     <lastmod>2023-04-25T16:19:21+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/study/factorial/</loc>
-    <lastmod>2023-04-21T18:05:17+09:00</lastmod>
-  </url><url>
-    <loc>https://dowrave.github.io/tags/python/</loc>
     <lastmod>2023-04-21T18:05:17+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>

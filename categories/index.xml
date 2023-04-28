@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Twae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 25 Apr 2023 16:19:21 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Apr 2023 18:50:15 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas</title>
+      <link>https://dowrave.github.io/categories/pandas/</link>
+      <pubDate>Fri, 28 Apr 2023 18:50:15 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/categories/pandas/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>이론</title>
       <link>https://dowrave.github.io/categories/%EC%9D%B4%EB%A1%A0/</link>
