@@ -5,15 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>소수 - Twae&#39;s Blog</title>
+	<title>전처리 - Twae&#39;s Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="소수" />
+		<meta property="og:title" content="전처리" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://dowrave.github.io/tags/%EC%86%8C%EC%88%98/" />
+<meta property="og:url" content="https://dowrave.github.io/tags/%EC%A0%84%EC%B2%98%EB%A6%AC/" />
 
-		<meta itemprop="name" content="소수">
+		<meta itemprop="name" content="전처리">
 <meta itemprop="description" content="">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -23,7 +23,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/tags/%EC%86%8C%EC%88%98/index.xml" title="Twae's Blog">
+	<link rel="alternate" type="application/rss+xml" href="/tags/%EC%A0%84%EC%B2%98%EB%A6%AC/index.xml" title="Twae's Blog">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 
@@ -103,23 +103,41 @@ if (!doNotTrack) {
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">소수</h1>
+		<h1 class="main__title">전처리</h1>
 	</header><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/study/isprime/" rel="bookmark">
-			[Python]소수 판별하기
+			<a href="/study/obj_dct_to_feature/" rel="bookmark">
+			[Pandas]문자열인 dict 값들로 원핫인코딩하기
 			</a>
 		</h2>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-04-18T18:06:43&#43;09:00">2023-04-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%EC%BD%94%ED%85%8C/" rel="category">코테</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-05-01T19:05:22&#43;09:00">2023-05-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/pandas/" rel="category">Pandas</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		에라토스체네스의 체 어떤 수(N)까지의 소수 리스트 구하기 2부터 찾고자 하는 수까지를 모두 나열한다.
+		문제 상황 어떤 데이터프레임이 아래와 같이 나타나 있다고 하자.
+test = pd.
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/study/pandas_inplace/" rel="bookmark">
+			[Pandas] inplace
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-04-28T18:50:15&#43;09:00">2023-04-28</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/pandas/" rel="category">Pandas</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		요약 inplace = True는 데이터프레임에 직접 접근해서 바로 수정한다.(권장X) inplace = False는 연산 결과를 따로 갖고 있다.
 	</div>
 </article>
 </main>

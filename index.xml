@@ -6,7 +6,17 @@
     <description>Recent content on Twae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 28 Apr 2023 18:50:15 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 19:05:22 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Pandas]문자열인 dict 값들로 원핫인코딩하기</title>
+      <link>https://dowrave.github.io/study/obj_dct_to_feature/</link>
+      <pubDate>Mon, 01 May 2023 19:05:22 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/study/obj_dct_to_feature/</guid>
+      <description>문제 상황 어떤 데이터프레임이 아래와 같이 나타나 있다고 하자.
+test = pd.</description>
+    </item>
+    
     <item>
       <title>[Pandas] inplace</title>
       <link>https://dowrave.github.io/study/pandas_inplace/</link>
