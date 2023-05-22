@@ -5,23 +5,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>[Pandas]문자열인 dict 값들로 원핫인코딩하기 - Twae&#39;s Blog</title>
+	<title>[Python]Virtualenv를 통해 가상환경 설정하기 - Twae&#39;s Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="[Pandas]문자열인 dict 값들로 원핫인코딩하기" />
-<meta property="og:description" content="문제 상황 어떤 데이터프레임이 아래와 같이 나타나 있다고 하자.
-test = pd." />
+		<meta property="og:title" content="[Python]Virtualenv를 통해 가상환경 설정하기" />
+<meta property="og:description" content="1. 과정 모든 과정은 Windows Powershell로 진행했다. 1. Virtualenv 설치 pip install virtualenv 2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dowrave.github.io/study/obj_dct_to_feature/" /><meta property="article:section" content="study" />
-<meta property="article:published_time" content="2023-05-01T19:05:22+09:00" />
-<meta property="article:modified_time" content="2023-05-01T19:05:22+09:00" />
+<meta property="og:url" content="https://dowrave.github.io/study/virtualenv/" /><meta property="article:section" content="study" />
+<meta property="article:published_time" content="2023-05-22T16:46:24+09:00" />
+<meta property="article:modified_time" content="2023-05-22T16:46:24+09:00" />
 
-		<meta itemprop="name" content="[Pandas]문자열인 dict 값들로 원핫인코딩하기">
-<meta itemprop="description" content="문제 상황 어떤 데이터프레임이 아래와 같이 나타나 있다고 하자.
-test = pd."><meta itemprop="datePublished" content="2023-05-01T19:05:22+09:00" />
-<meta itemprop="dateModified" content="2023-05-01T19:05:22+09:00" />
-<meta itemprop="wordCount" content="224">
-<meta itemprop="keywords" content="Python,Pandas,TIL,전처리," />
+		<meta itemprop="name" content="[Python]Virtualenv를 통해 가상환경 설정하기">
+<meta itemprop="description" content="1. 과정 모든 과정은 Windows Powershell로 진행했다. 1. Virtualenv 설치 pip install virtualenv 2."><meta itemprop="datePublished" content="2023-05-22T16:46:24+09:00" />
+<meta itemprop="dateModified" content="2023-05-22T16:46:24+09:00" />
+<meta itemprop="wordCount" content="174">
+<meta itemprop="keywords" content="가상환경," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -110,74 +108,70 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">[Pandas]문자열인 dict 값들로 원핫인코딩하기</h1>
+			<h1 class="post__title">[Python]Virtualenv를 통해 가상환경 설정하기</h1>
 			
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-05-01T19:05:22&#43;09:00">2023-05-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/pandas/" rel="category">Pandas</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-05-22T16:46:24&#43;09:00">2023-05-22</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD/" rel="category">가상환경</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<h3 id="문제-상황">문제 상황</h3>
+			<h2 id="1-과정">1. 과정</h2>
+<ul>
+<li>모든 과정은 <strong>Windows Powershell로 진행</strong>했다.</li>
+</ul>
+<h3 id="1-virtualenv-설치">1. Virtualenv 설치</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install virtualenv
+</span></span></code></pre></div><hr>
+<h3 id="2-가상환경-폴더-생성">2. 가상환경 폴더 생성</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>virtualenv &lt;프로젝트 폴더 이름&gt; 
+</span></span></code></pre></div><ul>
+<li><code>virtaulenv</code>은 <code>venv</code>와 달리 가상환경의 파이썬 버전도 지정할 수 있다.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>virtualenv &lt;프로젝트 폴더 이름&gt; --python<span style="color:#f92672">==</span>3.9.13
+</span></span></code></pre></div><hr>
+<h3 id="3-가상환경-활성화">3. 가상환경 활성화</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd &lt;프로젝트 폴더 이름&gt; <span style="color:#75715e"># 프로젝트 폴더에 들어가기</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/Scripts/activate <span style="color:#75715e"># Scripts 폴더의 activate를 실행</span>
+</span></span></code></pre></div><ul>
+<li>왼쪽에 <code>&lt;프로젝트 폴더 이름&gt;</code>이 뜨면 성공이다.</li>
+</ul>
+<hr>
+<h2 id="2-설치된-모듈-이름과-버전-관리하기--requirementstxt">2. 설치된 모듈 이름과 버전 관리하기 : requirements.txt</h2>
+<ul>
+<li>가상환경을 쓰는 이유는 프로그램을 사용하는 데 요구되는 패키지들의 버전을 일정하게 관리해주기 위함이다.</li>
+<li>이를 관리하는 텍스트 파일을 가상환경 내에 만들고 공유할 수 있다.</li>
+</ul>
+<h3 id="1-패키지-관리-파일-생성하기">1. 패키지 관리 파일 생성하기</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip freeze &gt; requirements.txt
+</span></span></code></pre></div><ul>
+<li>현재 가상환경에서 사용중인 모듈을 저장한다.</li>
+</ul>
+<h3 id="2-패키지-관리-파일을-이용해-모듈들-설치하기">2. 패키지 관리 파일을 이용해 모듈들 설치하기</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div><hr>
+<h2 id="3-venv-vs-virtaulenv">3. venv vs virtaulenv</h2>
+<ul>
+<li><a href="https://bskyvision.com/entry/python-%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD-virtualenv-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95-venv%EC%99%80-%EB%B9%84%EA%B5%90">이 글</a>의 내용을 가져오자면,</li>
+</ul>
 <blockquote>
-<p>어떤 데이터프레임이 아래와 같이 나타나 있다고 하자.</p>
+<ol>
+<li>venv는 virtaulenv에 비해 느리다.</li>
+<li>venv는 virtaulenv에 비해 확장성이 떨어진다.</li>
+<li>venv는 파이썬 버전을 다르게 해서 가상환경을 만들 수 없다.</li>
+<li>venv는 pip로 업그레이드할 수 없다.</li>
+</ol>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>test <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#34;X&#34;</span> : [<span style="color:#e6db74">&#39;{&#34;A&#34; : 123, &#34;B&#34; : 456}&#39;</span>, <span style="color:#e6db74">&#39;{&#34;A&#34; : 234}&#39;</span>]})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    |        X</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 0	| {&#34;A&#34; : 123, &#34;B&#34; : 456}</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1	| {&#34;A&#34; : 234}</span>
-</span></span></code></pre></div><ul>
-<li>코드에서 보이듯, 특성 X의 값들은 문자열이다. 내부에 <code>dict</code>를 갖고 있는 문자열이 된다.</li>
-<li>이 값을 처리해서 데이터프레임의 특성으로 <code>A</code>와 <code>B</code>를 올리고 싶고, 그 값의 크기에 상관없이 있으면 <code>1</code>, 없으면 <code>0</code>으로 구성하고 싶은 상황을 가정해보자.</li>
-</ul>
-<hr>
-<h3 id="과정">과정</h3>
-<h4 id="1-문자열---dict-변환하기">1. 문자열 -&gt; dict 변환하기</h4>
 <ul>
-<li><code>ast.literal_eval()</code> 또는 <code>eval()</code>을 이용한다.</li>
-<li>파이썬의 <strong>기본 자료형에 대해 문자열로 작성된 함수를 실행</strong>시켜준다.</li>
-<li><code>evaluate</code>라는 말 자체는 <strong>문자열로 작성된 수식이나 함수를 실행할 때 여기저기서 사용</strong>되는 듯 하다.
-<ul>
-<li><code>ast.literal_eval()</code>은 <code>eval()</code>보다 쓸 곳이 제한적이라는 것만 알아두자.</li>
-<li>예를 들면 수식 <code>ast.literal_eval(&quot;1+2&quot;)</code>은 계산되지 않는다고 한다.</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ast
-</span></span><span style="display:flex;"><span>series <span style="color:#f92672">=</span> series<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : ast<span style="color:#f92672">.</span>literal_eval(x))
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># series = series.apply(lambda x : eval(x))</span>
-</span></span></code></pre></div><h4 id="2-dict의-key들을-feature로-올리기">2. dict의 key들을 feature로 올리기</h4>
-<ul>
-<li>값이 있으면 <code>1</code>, 없으면 <code>0</code>이라고 했다.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> series<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : pd<span style="color:#f92672">.</span>Series(<span style="color:#ae81ff">1</span>, index <span style="color:#f92672">=</span> x))<span style="color:#f92672">.</span>fillna(<span style="color:#ae81ff">0</span>)
-</span></span></code></pre></div><ul>
-<li>어떤 특성을 갖고 있는 행들에 대해 값 <code>1</code>이 채워지며, 없는 행들은 <code>NaN</code>이 채워진다.</li>
-<li><code>NaN</code>값들을 0으로 채우면 완성됨.</li>
+<li>원 글에서도 <strong>3번</strong>을 중요시했고, 나도 <strong>3번</strong> 때문에 <code>virutalenv</code>를 설치했다. 현재 파이썬 버전은 3.10인데 아나콘다에서 실행한 버전은 3.9였기 때문에 버전을 맞춰줄 필요가 있었기 때문이다.</li>
 </ul>
 <hr>
 <ul>
-<li>전체 코드</li>
+<li>가상환경이 필요할 때마다 자꾸 까먹어서 블로그에 정리해둔다.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># import ast</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>test <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#34;X&#34;</span> : [<span style="color:#e6db74">&#39;{&#34;A&#34; : 123, &#34;B&#34; : 456}&#39;</span>, <span style="color:#e6db74">&#39;{&#34;A&#34; : 234}&#39;</span>]})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 과정 1</span>
-</span></span><span style="display:flex;"><span>test[<span style="color:#e6db74">&#39;X&#39;</span>] <span style="color:#f92672">=</span> test[<span style="color:#e6db74">&#39;X&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : eval(x))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 과정 2</span>
-</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> test[<span style="color:#e6db74">&#39;X&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : pd<span style="color:#f92672">.</span>Series(<span style="color:#ae81ff">1</span>, index <span style="color:#f92672">=</span> x))<span style="color:#f92672">.</span>fillna(<span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#      A    B</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 0  1.0  1.0</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1  1.0  0.0</span>
-</span></span></code></pre></div>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -185,16 +179,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">Python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/pandas/" rel="tag">Pandas</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/til/" rel="tag">TIL</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/%EC%A0%84%EC%B2%98%EB%A6%AC/" rel="tag">전처리</a>
+			<a class="tags__link btn" href="/tags/%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD/" rel="tag">가상환경</a>
 		</li>
 	</ul>
 </div>
@@ -205,15 +190,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/study/pandas_inplace/" rel="prev">
+		<a class="pager__link" href="/study/obj_dct_to_feature/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">[Pandas] inplace</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/study/virtualenv/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">[Python]Virtualenv를 통해 가상환경 설정하기</p>
+			<p class="pager__title">[Pandas]문자열인 dict 값들로 원핫인코딩하기</p>
 		</a>
 	</div>
 </nav>

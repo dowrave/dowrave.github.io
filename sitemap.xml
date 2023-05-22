@@ -2,10 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dowrave.github.io/study/obj_dct_to_feature/</loc>
-    <lastmod>2023-05-01T19:05:22+09:00</lastmod>
+    <loc>https://dowrave.github.io/study/virtualenv/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/categories/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/study/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/tags/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/tags/%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/categories/%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD/</loc>
+    <lastmod>2023-05-22T16:46:24+09:00</lastmod>
+  </url><url>
+    <loc>https://dowrave.github.io/study/obj_dct_to_feature/</loc>
     <lastmod>2023-05-01T19:05:22+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/tags/pandas/</loc>
@@ -17,16 +35,7 @@
     <loc>https://dowrave.github.io/tags/python/</loc>
     <lastmod>2023-05-01T19:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://dowrave.github.io/study/</loc>
-    <lastmod>2023-05-01T19:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://dowrave.github.io/tags/</loc>
-    <lastmod>2023-05-01T19:05:22+09:00</lastmod>
-  </url><url>
     <loc>https://dowrave.github.io/tags/til/</loc>
-    <lastmod>2023-05-01T19:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://dowrave.github.io/</loc>
     <lastmod>2023-05-01T19:05:22+09:00</lastmod>
   </url><url>
     <loc>https://dowrave.github.io/tags/%EC%A0%84%EC%B2%98%EB%A6%AC/</loc>
