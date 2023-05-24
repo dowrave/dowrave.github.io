@@ -5,21 +5,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>[Python]소수 판별하기 - Twae&#39;s Blog</title>
+	<title>[Pandas]비영어권 문자 인코딩: csv파일 사용 시 주의점 - Twae&#39;s Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="[Python]소수 판별하기" />
-<meta property="og:description" content="에라토스체네스의 체 어떤 수(N)까지의 소수 리스트 구하기 2부터 찾고자 하는 수까지를 모두 나열한다." />
+		<meta property="og:title" content="[Pandas]비영어권 문자 인코딩: csv파일 사용 시 주의점" />
+<meta property="og:description" content="요약 pandas에서 기본 지정된 인코딩 포맷은 utf-8이고, MS excel에서는 ANSI를 사용한다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dowrave.github.io/study/isprime/" /><meta property="article:section" content="study" />
-<meta property="article:published_time" content="2023-04-18T18:06:43+09:00" />
-<meta property="article:modified_time" content="2023-04-18T18:06:43+09:00" />
+<meta property="og:url" content="https://dowrave.github.io/study/encoding_format/" /><meta property="article:section" content="study" />
+<meta property="article:published_time" content="2023-05-24T14:05:07+09:00" />
+<meta property="article:modified_time" content="2023-05-24T14:05:07+09:00" />
 
-		<meta itemprop="name" content="[Python]소수 판별하기">
-<meta itemprop="description" content="에라토스체네스의 체 어떤 수(N)까지의 소수 리스트 구하기 2부터 찾고자 하는 수까지를 모두 나열한다."><meta itemprop="datePublished" content="2023-04-18T18:06:43+09:00" />
-<meta itemprop="dateModified" content="2023-04-18T18:06:43+09:00" />
-<meta itemprop="wordCount" content="162">
-<meta itemprop="keywords" content="Python,소수,알고리즘," />
+		<meta itemprop="name" content="[Pandas]비영어권 문자 인코딩: csv파일 사용 시 주의점">
+<meta itemprop="description" content="요약 pandas에서 기본 지정된 인코딩 포맷은 utf-8이고, MS excel에서는 ANSI를 사용한다."><meta itemprop="datePublished" content="2023-05-24T14:05:07+09:00" />
+<meta itemprop="dateModified" content="2023-05-24T14:05:07+09:00" />
+<meta itemprop="wordCount" content="244">
+<meta itemprop="keywords" content="pandas," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -108,60 +108,58 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">[Python]소수 판별하기</h1>
+			<h1 class="post__title">[Pandas]비영어권 문자 인코딩: csv파일 사용 시 주의점</h1>
 			
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-04-18T18:06:43&#43;09:00">2023-04-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%EC%BD%94%ED%85%8C/" rel="category">코테</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-05-24T14:05:07&#43;09:00">2023-05-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/pandas/" rel="category">Pandas</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<h2 id="에라토스체네스의-체">에라토스체네스의 체</h2>
+			<h3 id="요약">요약</h3>
+<blockquote>
+<p><code>pandas</code>에서 기본 지정된 인코딩 포맷은 <code>utf-8</code>이고, <code>MS excel</code>에서는 <code>ANSI</code>를 사용한다.<br>
+이 차이 때문에 <code>csv</code> 파일이 깨질 수 있다. 혹시 엑셀로 <strong>영어와 숫자 이외의 문자가 포함된 데이터</strong>를 확인하게 된다면, <code>ctrl + s</code>을 하지 않도록 유의하자. 경고문이 1번 나오긴 한다.</p>
+</blockquote>
+<hr>
 <ul>
-<li>어떤 수(<code>N</code>)까지의 소수 리스트 구하기</li>
+<li><code>steamspypi</code>를 이용한 데이터 분석 프로젝트를 하고 있는 중에 발생한 문제가 있어 정리해둔다.</li>
 </ul>
-<ol>
-<li>2부터 <code>찾고자 하는 수</code>까지를 모두 나열한다.</li>
-<li>2부터 시작해서, 자신은 포함하되 자기 자신의 배수는 모두 제외한다.</li>
-<li><code>찾고자 하는 수</code>의 <!-- raw HTML omitted -->제곱근<!-- raw HTML omitted -->까지 2를 반복한다.</li>
-</ol>
-<h3 id="예시">예시</h3>
-<ol>
-<li><code>N = 16</code> : 16까지의 소수를 구하고 싶다</li>
-<li>2부터 16까지 수를 나열한다</li>
-<li>2는 남기고, 2의 배수를 제외한다</li>
-<li>3도 남기고, 3의 배수를 제외한다</li>
-<li>4는 이미 없는 수(2에서 제거됨)이며, N의 제곱근이므로 종료한다</li>
-<li>남은 수는 <code>[2, 3, 5, 7, 11, 13]</code></li>
-</ol>
-<h2 id="1-어떤-수-n이-소수인가-체크하기">1. 어떤 수 n이 소수인가? 체크하기</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">IsPrime</span>(n):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, int(math<span style="color:#f92672">.</span>sqrt(n)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> n <span style="color:#f92672">%</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
-</span></span></code></pre></div><h2 id="2-정수-n까지의-소수-리스트-구하기">2. 정수 n까지의 소수 리스트 구하기</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prime_list</span>(n):
-</span></span><span style="display:flex;"><span>	lst <span style="color:#f92672">=</span> [<span style="color:#66d9ef">True</span>] <span style="color:#f92672">*</span> (n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)  <span style="color:#75715e"># 전부 소수라고 깔고 시작</span>
-</span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	m <span style="color:#f92672">=</span> int(n <span style="color:#f92672">**</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#75715e"># 배수 판정 설정</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># 2부터 탐색</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, m<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
-</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># 배수를 제외함</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> lst[i] <span style="color:#f92672">==</span> <span style="color:#66d9ef">True</span>:
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i<span style="color:#f92672">+</span>i, n, i):
-</span></span><span style="display:flex;"><span>				lst[j] <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> [i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> lst[i] <span style="color:#f92672">==</span> <span style="color:#66d9ef">True</span>]
-</span></span></code></pre></div>
+<p><img src="/images/steam_1.png" alt="깨진정보"></p>
+<ul>
+<li>
+<p><code>name</code> 열에 <code>name</code>과 <code>date</code>가 같이 들어가게 되었고, 이 때문에 다른 데이터들이 왼쪽으로 1칸씩 밀린 상황이다.</p>
+</li>
+<li>
+<p>정확히 어떤 것 때문에 위처럼 데이터가 깨졌는지 알 수 없어서, 아예 처음부터 데이터를 재수집하고 이전에 오류가 떴던 <code>appid</code>만을 조회해보면 아래와 같았다.</p>
+</li>
+</ul>
+<p><img src="/images/steam_2.png" alt="다시수집한정보"></p>
+<ul>
+<li><code>appid</code> 기준 같은 정보를 보면, 데이터가 정상적으로 수집되었다.</li>
+<li>기억을 되짚어보면 이전에 엑셀로 조회했다가 저장한 적이 있었는데, 이게 영향을 줬을까 싶어서 엑셀로 조회해봤다.</li>
+</ul>
+<p><img src="/images/steam_3.png" alt="엑셀"></p>
+<ul>
+<li><strong>이 파일은 최초에 나온 깨진 데이터가 아니라 2번째로 나온 정상적으로 조회된 데이터이다.</strong></li>
+<li>즉, 같은 데이터를 조회했는데도 <code>pandas</code>에선 정상적으로 나오고 <code>MS Excel</code>에서는 깨져서 나오는 것이다.</li>
+<li>실제로 위 엑셀 파일을 저장한 다음 다시 <code>pd.read_csv()</code>로 불러오면 에러가 뜨는 것을 확인할 수 있다.</li>
+</ul>
+<p><img src="/images/steam_4.png" alt="유니코드에러"></p>
+<blockquote>
+<p>이 파일을 읽기 위해 <code>pd.read_csv(file_name, encoding = 'ansi')</code>, 혹은 <code>pd.read_csv(filename, encoding_errors = 'ignore')</code>을 사용하는 것도 가능하다. 그러나 엑셀에서 1번 저장했기 때문에 엑셀 파일에서 보인 것처럼 파일이 깨져서 들어온다.</p>
+</blockquote>
+<hr>
+<ul>
+<li>별다른 옵션 없이 저장하면 <code>pandas</code>에서는 <code>utf-8</code>로 저장하고, 엑셀에서는 <code>ANSI</code>로 읽어오기 때문으로 보인다. 즉 사용하는 툴들의 문자 인코딩 포맷이 다르기 때문에 이런 문제가 발생하는 것이다.</li>
+<li>영어나 숫자로 된 데이터만을 이용한다면 상관없을 것 같은데, <strong>한글이나 한자 등 비영어권의 문자를 이용한 데이터를 사용한다면 유의</strong>해야겠다.</li>
+</ul>
+<hr>
+<ul>
+<li>여담 : <code>appid</code>의 경우 <code>int</code>로 저장되어야 하는 데이터인데, 아래에 <code>NaN</code>값이 들어가게 되면서 <code>pandas</code>에서 자동으로 <code>float</code>로 조회하게 되었다. 왜 <code>NaN</code>값이 들어가게 되었는지 또 생각해야 하는 상황이라 골치가 아프다.</li>
+</ul>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -169,13 +167,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">Python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/%EC%86%8C%EC%88%98/" rel="tag">소수</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">알고리즘</a>
+			<a class="tags__link btn" href="/tags/pandas/" rel="tag">pandas</a>
 		</li>
 	</ul>
 </div>
@@ -186,15 +178,9 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/study/hugoblog/" rel="prev">
+		<a class="pager__link" href="/study/virtualenv/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">[Hugo]깃허브 블로그 만들기</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/study/hugo_common_frontmatter/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">[Hugo] 공통 프론트매터 만들기</p>
+			<p class="pager__title">[Python]Virtualenv를 통해 가상환경 설정하기</p>
 		</a>
 	</div>
 </nav>

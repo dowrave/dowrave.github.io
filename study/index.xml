@@ -6,7 +6,16 @@
     <description>Recent content in Studies on Twae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 May 2023 16:46:24 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/study/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 May 2023 14:05:07 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Pandas]비영어권 문자 인코딩: csv파일 사용 시 주의점</title>
+      <link>https://dowrave.github.io/study/encoding_format/</link>
+      <pubDate>Wed, 24 May 2023 14:05:07 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/study/encoding_format/</guid>
+      <description>요약 pandas에서 기본 지정된 인코딩 포맷은 utf-8이고, MS excel에서는 ANSI를 사용한다.</description>
+    </item>
+    
     <item>
       <title>[Python]Virtualenv를 통해 가상환경 설정하기</title>
       <link>https://dowrave.github.io/study/virtualenv/</link>
