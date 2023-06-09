@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Twae&#39;s Blog</title>
+    <link>https://dowrave.github.io/categories/python/</link>
+    <description>Recent content in Python on Twae&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 09 Jun 2023 17:33:25 +0900</lastBuildDate><atom:link href="https://dowrave.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Docker]파이썬 로그가 보이지 않는 상황</title>
+      <link>https://dowrave.github.io/study/python_script_not_run/</link>
+      <pubDate>Fri, 09 Jun 2023 17:33:25 +0900</pubDate>
+      
+      <guid>https://dowrave.github.io/study/python_script_not_run/</guid>
+      <description>요약 도커를 이용해 계속 작동하는 파이썬 스크립트를 사용하는 경우, python -u를 지정해 출력을 바로바로 내보낼 수 있도록 구성하자.</description>
+    </item>
+    
+  </channel>
+</rss>

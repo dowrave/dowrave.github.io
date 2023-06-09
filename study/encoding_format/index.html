@@ -18,7 +18,7 @@
 		<meta itemprop="name" content="[Pandas]비영어권 문자 인코딩: csv파일 사용 시 주의점">
 <meta itemprop="description" content="요약 pandas에서 기본 지정된 인코딩 포맷은 utf-8이고, MS excel에서는 ANSI를 사용한다."><meta itemprop="datePublished" content="2023-05-24T14:05:07+09:00" />
 <meta itemprop="dateModified" content="2023-05-24T14:05:07+09:00" />
-<meta itemprop="wordCount" content="244">
+<meta itemprop="wordCount" content="260">
 <meta itemprop="keywords" content="pandas," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -154,6 +154,7 @@ if (!doNotTrack) {
 <ul>
 <li>별다른 옵션 없이 저장하면 <code>pandas</code>에서는 <code>utf-8</code>로 저장하고, 엑셀에서는 <code>ANSI</code>로 읽어오기 때문으로 보인다. 즉 사용하는 툴들의 문자 인코딩 포맷이 다르기 때문에 이런 문제가 발생하는 것이다.</li>
 <li>영어나 숫자로 된 데이터만을 이용한다면 상관없을 것 같은데, <strong>한글이나 한자 등 비영어권의 문자를 이용한 데이터를 사용한다면 유의</strong>해야겠다.</li>
+<li>엑셀에서도 <code>다른 이름으로 저장 - 도구 - 웹 옵션 - 인코딩 - 유니코드(UTF-8)</code>이 있긴 하니까 참고하자.</li>
 </ul>
 <hr>
 <ul>
@@ -183,6 +184,12 @@ if (!doNotTrack) {
 			<p class="pager__title">[Python]Virtualenv를 통해 가상환경 설정하기</p>
 		</a>
 	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/study/python_script_not_run/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">[Docker]파이썬 로그가 보이지 않는 상황</p>
+		</a>
+	</div>
 </nav>
 
 
@@ -193,9 +200,13 @@ if (!doNotTrack) {
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/docker/"><strong>Docker</strong></a></li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/"><strong>Hugo</strong></a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/pandas/"><strong>Pandas</strong></a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python/"><strong>Python</strong></a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD/"><strong>가상환경</strong></a></li>
 			<li class="widget__item">
@@ -208,6 +219,7 @@ if (!doNotTrack) {
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="Docker">Docker</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pandas/" title="pandas">pandas</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
