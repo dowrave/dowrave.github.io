@@ -34,7 +34,7 @@ jobs: # 워크플로우의 작업들
       - name: Build with Hugo # 실제 Hugo 사이트 실행 명령어 실행
         run: hugo --minify # 최소 출력으로 사이트 빌드
       - name: Upload artifact # 빌드된 파일을 Github Actions 아티팩트로 업로드
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./public # Hugo가 생성한 정적 파일 디렉토리 지정
 
