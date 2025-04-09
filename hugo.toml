@@ -1,3 +1,32 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://dowrave.github.io'
+languageCode = 'ko-kr'
+title = 'dowrave(Waltwaez)의 블로그'
+theme = 'github-style'
+pygmentsCodeFences = true # 코드 블록 구문 강조 기능
+pygmentsUseClasses = true # 코드 강조 스타일 <style> 대신 CSS로 관리 
+
+[params]
+  author = "HTLee"
+  description = "사이트 테스트 중"
+  github = "dowrave"
+  # linkedin = "dowrave"
+  email = "dowrave@gmail.com"
+  url = "https://dowrave.github.io"
+  # keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  # 여기 경로는 public/이 기준임 - theme으로 들어가면 없음
+  favicon = "/images/github.png"
+  avatar = "/images/myAvatar.png"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
+  location = "Goyang, Korea"
+  enableGitalk = false
+  custom_css = ["css/custom.css"]
+  custom_js = ["js/custom.js"]
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[services]
+  [services.googleAnalytics]
+    # ID = "UA-123456-789"

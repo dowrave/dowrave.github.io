@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on dowrave(Waltwaez)의 블로그</title>
+    <link>http://localhost:2043/posts/</link>
+    <description>Recent content in Posts on dowrave(Waltwaez)의 블로그</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 10 Apr 2025 02:19:10 +0900</lastBuildDate>
+    <atom:link href="http://localhost:2043/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:2043/posts/my-first-post/</link>
+      <pubDate>Thu, 10 Apr 2025 00:53:57 +0900</pubDate>
+      <guid>http://localhost:2043/posts/my-first-post/</guid>
+      <description>&lt;p&gt;엘렐렐렐레레ㅔㅔㅔㅔ&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
