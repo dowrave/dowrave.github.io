@@ -16,7 +16,7 @@ pygmentsUseClasses = true # 코드 강조 스타일 <style> 대신 CSS로 관리
   rss = true
   lastmod = true
   # 여기 경로는 public/이 기준임 - theme으로 들어가면 없음
-  favicon = "/images/github.png"
+  favicon = "/images/favicon.png"
   avatar = "/images/myAvatar.png"
   headerIcon = "/images/GitHub-Mark-Light-32px.png"
   location = "Goyang, Korea"
