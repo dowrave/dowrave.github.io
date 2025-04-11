@@ -9,7 +9,7 @@ summary = 'Project02'
 네이버 사전 등에 있는 **손글씨 이미지를 문자열로 바꿔주는 기능**을 참고하여 진행한 프로젝트입니다.
 
 ## 주요 내용
-![모델 실험](/images/Project2Usage.png)
+![모델 실험](/images/Project2Usage.PNG)
 - **한글 1글자**를 그려넣은 **이미지를 인식해서 컴퓨터 문자로 바꾸는 필기 인식기** 기능
 - 이미지는 **2350개**의 글자 중에서 분류
 - 구글 코랩에서 텐서플로우를 사용하여 모델 학습을 진행
@@ -44,4 +44,4 @@ summary = 'Project02'
 
 ## 참고
 ### 블로그 시절 작성한 프로젝트 개요
-![프로젝트2개요](/images/Project2-ImageClassification.png)
+![프로젝트2개요](/images/Project2-ImageClassification.PNG)
