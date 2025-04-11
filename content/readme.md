@@ -16,9 +16,10 @@ title = 'Readme'
 - **Tools** : Git, Docker
 
 # Works
-- React + Django로 AWS에 블로그 구축
-- 한글 단일 글자 필기체 이미지 분류
-- 스팀 데이터 수집 / 글 이진 분류
+- [React + Django로 AWS에 블로그 구축](https://dowrave.github.io/post/makingblog/)
+  - [실제 사이트](https://www.htlee-blog.com/)
+- [한글 단일 글자 필기체 이미지 분류](https://dowrave.github.io/post/imageclassification/)
+- [스팀 데이터 수집 / 글 이진 분류](https://dowrave.github.io/post/steamdatacollect/)
 
 # etc projects
 - [한경 컨센서스 웹 스크래핑 & 조회](https://github.com/dowrave/Project02_Hankyung)
