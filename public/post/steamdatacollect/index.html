@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1531/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1531/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1531/css/syntax.css' />
-    <title>React &#43; Django로 AWS에 웹 사이트 구축 - dowrave(Waltwaez)의 블로그</title>
+    <title>스팀 데이터 수집 &amp; 리뷰 이진 분류 모델 학습 - dowrave(Waltwaez)의 블로그</title>
     
     <link rel="icon" type="image/x-icon" href='/images/favicon.png'>
     
@@ -21,17 +21,17 @@
 
     
     <meta name="description"
-  content="Project01" />
+  content="Project03" />
 <meta name="keywords"
   content='' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="http://localhost:1531/post/makingblog/" />
+<link rel="canonical" href="http://localhost:1531/post/steamdatacollect/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="React &#43; Django로 AWS에 웹 사이트 구축 - dowrave(Waltwaez)의 블로그" />
+<meta name="twitter:title" content="스팀 데이터 수집 &amp; 리뷰 이진 분류 모델 학습 - dowrave(Waltwaez)의 블로그" />
 <meta name="twitter:description"
-  content="Project01" />
+  content="Project03" />
 <meta name="twitter:site" content="http://localhost:1531/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -39,17 +39,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="React &#43; Django로 AWS에 웹 사이트 구축 - dowrave(Waltwaez)의 블로그">
+<meta property="og:title" content="스팀 데이터 수집 &amp; 리뷰 이진 분류 모델 학습 - dowrave(Waltwaez)의 블로그">
 <meta property="og:description"
-  content="Project01" />
-<meta property="og:url" content="http://localhost:1531/post/makingblog/" />
-<meta property="og:site_name" content="React &#43; Django로 AWS에 웹 사이트 구축" />
+  content="Project03" />
+<meta property="og:url" content="http://localhost:1531/post/steamdatacollect/" />
+<meta property="og:site_name" content="스팀 데이터 수집 &amp; 리뷰 이진 분류 모델 학습" />
 <meta property="og:image"
   content="http://localhost:1531/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2025-04-10 18:20:23 &#43;0900 KST" />
+<meta property="article:published_time" content="2025-04-11 14:19:59 &#43;0900 KST" />
 
 
 
@@ -145,19 +145,19 @@
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="http://localhost:1531/post/makingblog/">React &#43; Django로 AWS에 웹 사이트 구축</a>
+                    <a href="http://localhost:1531/post/steamdatacollect/">스팀 데이터 수집 &amp; 리뷰 이진 분류 모델 학습</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Thu, 10 Apr 2025 18:20:23 &#43;0900"
+                  Created <relative-time datetime="Fri, 11 Apr 2025 14:19:59 &#43;0900"
                     class="no-wrap">
-                    Thu, 10 Apr 2025 18:20:23 &#43;0900</relative-time>
+                    Fri, 11 Apr 2025 14:19:59 &#43;0900</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 11 Apr 2025 15:22:14 &#43;0900"
+                  Modified <relative-time datetime="Fri, 11 Apr 2025 15:19:20 &#43;0900"
                     class="no-wrap">
-                    Fri, 11 Apr 2025 15:22:14 &#43;0900</relative-time>
+                    Fri, 11 Apr 2025 15:19:20 &#43;0900</relative-time>
                   
                 </div>
               </div>
@@ -187,7 +187,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      738 Words
+                      528 Words
                     
 
                   </div>
@@ -199,93 +199,56 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h1 id="react--django로-aws에-웹-사이트-구축">React + Django로 AWS에 웹 사이트 구축</h1>
+                <article class="markdown-body entry-content container-lg"><h1 id="스팀-데이터-수집--리뷰-이진-분류-모델-학습">스팀 데이터 수집 &amp; 리뷰 이진 분류 모델 학습</h1>
 <h2 id="개요">개요</h2>
-<p><strong>2024년 1월부터 5월까지 진행한 프로젝트</strong>이며, <strong>AWS 프리 티어를 이용해 2024년 5월부터 2025년 4월까지 유지된 사이트</strong>입니다.<br>
-<del>현재는 유지보수가 어려울 것 같아 사이트를 내린 상태입니다.</del><br>
-도메인은 <code>htlee-blog.com</code>을 사용했습니다.</p>
-<h2 id="주요-구현-내용">주요 구현 내용</h2>
 <ul>
-<li><strong>상단 바의 카테고리 전환 버튼</strong> : <code>Work</code>(파란색)와 <code>Hobby</code>(붉은색)을 전환</li>
-<li><strong>페이지 구현</strong> : 메인메뉴, 게시판, 게시글, 아카이브, 회원</li>
-<li><strong>회원가입과 로그인</strong> : 이메일 인증까지만 진행, 실제 가입은 X</li>
-<li><strong>글쓰기</strong> : Quill / 동영상 첨부, 스포일러 표시 등 일부 기능 커스터마이징</li>
-<li><strong>로그인 유지</strong> : JWT 토큰, Http Only 쿠키</li>
-<li><strong>오디오 파일 스트리밍(HLS) 플레이어</strong></li>
+<li><strong>의도)</strong> steam의 데이터를 수집해서 날짜별로 동시 접속자와 리뷰의 추이를 파악, 유저의 이탈이 왜 발생하는지 파악하기</li>
+<li><strong>실제)</strong> 유저가 글로 남긴 리뷰 데이터가 많지 않음, 워드 클라우드를 사용하는 것도 의도에 부합하지 않고, 리뷰 글 수집도 엄청 오래 걸림</li>
+<li><strong>결과)</strong> <code>steamspy</code>를 이용한 매일 데이터 수집, 클라우드에 띄워 자동화, 리뷰 긍/부정 이진분류 모델 작성(실제 사용 X)</li>
+</ul>
+<h2 id="주요-내용">주요 내용</h2>
+<ul>
+<li><strong>스팀 데이터 수집</strong> : 하루의 데이터만 API에 띄우는 <code>steamspy</code>을 매일 추적해 게임들의 추이 관찰(주로 <code>CCU(하루 최대 동접자)</code>을 관찰)
+<ul>
+<li><strong>자동화</strong> : 매일 수동 실행 -&gt; 로컬 도커 컨테이너 사용 -&gt; EC2 도커 컨테이너 사용</li>
+<li><strong>시각화</strong> : 수집된 CCU 데이터는 RDS에 저장, 블로그에서 시각화(하단 <code>블로그 시절 프로젝트 개요</code> 참조)</li>
+</ul>
+</li>
+<li><strong>스팀 리뷰 이진 분류 모델 학습</strong> : 리뷰 데이터 수집, 하이퍼파라미터 튜닝, 모델 학습
+<ul>
+<li>모델은 학습은 해뒀는데 실제 추론에서 사용하지 못했음</li>
+</ul>
+</li>
 </ul>
 <h2 id="skills--used-resources">Skills / Used Resources</h2>
 <ul>
-<li>프론트엔드 : <code>React + Vite + TS</code>, <code>Redux</code></li>
-<li>백엔드 : <code>Django (REST Framework)</code></li>
-<li>스타일 : <code>Tailwind CSS</code></li>
-<li>DBMS : <code>MySQL</code></li>
-<li>Cloud : <code>AWS(S3, Cloudfront, EC2, RDS)</code></li>
-</ul>
-<h2 id="세부-내용">세부 내용</h2>
+<li><strong>데이터 수집</strong>
 <ul>
-<li>대부분이 스크린샷입니다.</li>
-</ul>
-<h3 id="메인-화면">메인 화면</h3>
-<ul>
-<li>최근 글 5개 표시 : 카테고리 전체, 각 게시판</li>
-<li>현재 하고 있는 일 / 관심사</li>
-<li>깃허브의 잔디밭 : 글 게시 활동에 반응</li>
-<li>카테고리가 2개이므로 실질적인 메인 페이지는 2개</li>
-</ul>
-<h4 id="work-메인화면">Work 메인화면</h4>
-<p><img src="/images/MainSite1.png" alt="메인페이지1"></p>
-<p><img src="/images/MainSite2.png" alt="메인페이지2"></p>
-<ul>
-<li>배경음악 구현
-<ul>
-<li>SUNO AI로 노래를 만든 다음, 사이트의 배경음으로 넣을 수 있게 구현했습니다.</li>
-<li><strong>HLS 적용</strong>
-<ul>
-<li>MP3 파일을 그대로 넣었을 때, 로딩이 완료되지 않은 상태에서 재생 시간 변경을 시도하면 슬라이더가 맨 처음으로 돌아가는 문제가 있었습니다.</li>
-<li>각 곡에 HLS을 적용하고 백엔드 서버에서 해당 데이터를 갖고 있게 하는 식으로 구현하여 위 문제를 해결했습니다.</li>
-<li>HLS는 사이트의 어떤 페이지에서든 이용할 수 있습니다.</li>
+<li>게임 : <code>steamspypi</code></li>
+<li>리뷰글 : <code>Steam API</code></li>
 </ul>
 </li>
+<li><strong>모델 생성 및 훈련</strong>
+<ul>
+<li>환경 : <code>Google Colab</code>, <code>GCS(TPU 사용)</code></li>
+<li>하이퍼파라미터 튜닝 : <code>keras-tuner(HyperBand)</code></li>
+<li>프레임워크 : <code>Tensorflow</code></li>
 </ul>
 </li>
+<li><strong>데이터 저장</strong> : <code>MySQL</code>, <code>pandas</code></li>
+<li><strong>시각화</strong> : <code>Recharts</code></li>
+<li><strong>컨테이너</strong> : <code>Docker, Linux</code></li>
 </ul>
-<h4 id="hobby-메인화면">Hobby 메인화면</h4>
-<p><img src="/images/MainSite3.png" alt="메인페이지3"></p>
-<p><img src="/images/MainSite4.png" alt="메인페이지4"></p>
+<h2 id="링크">링크</h2>
 <ul>
-<li><code>현재 관심사</code>의 편집 버튼은 로그인 중일 때에만 나타납니다.</li>
+<li><a href="https://github.com/dowrave/SteamDataAnalysis">프로젝트 레포지토리</a> : 데이터 수집을 어떻게 했고, 어떻게 저장했는지 기록되어 있습니다.</li>
+<li><a href="https://drive.google.com/file/d/1OBSRzRXwaFDP4pZq04Dy5iU6VdBhXwsJ/view">리뷰 이진 분류 모델(구글 드라이브, h5)</a></li>
+<li><a href="https://steamspy.com/">steamspy</a></li>
+<li><a href="https://github.com/snunlp/KR-BERT">kr-BERT</a></li>
 </ul>
-<p><img src="/images/MainSite5.png" alt="메인페이지5"></p>
-<h3 id="페이지">페이지</h3>
-<ul>
-<li>게시글은 <a href="https://waltwaez.tistory.com/">티스토리</a>에 백업해뒀습니다.</li>
-</ul>
-<h4 id="게시판">게시판</h4>
-<p><img src="/images/StudyPostList.png" alt="공부 게시판"></p>
-<p><img src="/images/AnimePostList.png" alt="애니메이션 감상문 게시판"></p>
-<h4 id="글쓰기">글쓰기</h4>
-<p><img src="/images/WritePost.png" alt="글쓰기"></p>
-<h4 id="아카이브">아카이브</h4>
-<ul>
-<li>
-<p>전체 아카이브 페이지
-<img src="/images/StudyEntireArchive.png" alt="공부 전체 아카이브"></p>
-</li>
-<li>
-<p>취미 2024년 아카이브 페이지
-<img src="/images/HobbyAnnualArchive.png" alt="취미 2024년 아카이브"></p>
-</li>
-</ul>
-<h4 id="게시글">게시글</h4>
-<ul>
-<li>게시글 스크린샷을 찍어둔 게 없어서.. 만약 복구할 수 있으면 확보해 보겠읍니다.</li>
-</ul>
-<h3 id="회원가입과-로그인">회원가입과 로그인</h3>
-<p><img src="/images/SignIn&amp;SignUp.png" alt="회원가입, 로그인"></p>
-<p><img src="/images/SignUp2.png" alt="회원가입2"></p>
-<h2 id="참고">참고</h2>
-<h3 id="블로그-시절-작성한-프로젝트-개요">블로그 시절 작성한 프로젝트 개요</h3>
-<p><img src="/images/Project1Summary.png" alt="요약"></p>
+<h1 id="참고">참고</h1>
+<h2 id="블로그-시절-프로젝트-개요">블로그 시절 프로젝트 개요</h2>
+<p><img src="/images/Project03.png" alt="3"></p>
 </article>
               </div>
             </div>
