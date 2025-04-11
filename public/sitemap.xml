@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1531/</loc>
-    <lastmod>2025-04-11T03:12:26+09:00</lastmod>
+    <loc>http://localhost:5643/post/</loc>
+    <lastmod>2025-04-11T15:22:14+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1531/post/</loc>
-    <lastmod>2025-04-11T03:12:26+09:00</lastmod>
+    <loc>http://localhost:5643/</loc>
+    <lastmod>2025-04-11T15:22:14+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1531/post/makingblog/</loc>
-    <lastmod>2025-04-11T03:12:26+09:00</lastmod>
+    <loc>http://localhost:5643/post/steamdatacollect/</loc>
+    <lastmod>2025-04-11T15:19:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1531/readme/</loc>
+    <loc>http://localhost:5643/post/imageclassification/</loc>
+    <lastmod>2025-04-11T15:20:52+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:5643/post/makingblog/</loc>
+    <lastmod>2025-04-11T15:22:14+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:5643/readme/</loc>
     <lastmod>2025-04-10T18:17:29+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1531/categories/</loc>
+    <loc>http://localhost:5643/categories/</loc>
   </url><url>
-    <loc>http://localhost:1531/tags/</loc>
+    <loc>http://localhost:5643/tags/</loc>
   </url>
 </urlset>

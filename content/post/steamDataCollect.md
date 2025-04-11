@@ -1,6 +1,6 @@
 +++
 date = '2025-04-11T14:19:59+09:00'
-draft = true
+draft = false
 title = '스팀 데이터 수집 & 리뷰 이진 분류 모델 학습'
 summary = "Project03"
 +++

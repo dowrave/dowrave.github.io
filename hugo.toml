@@ -1,12 +1,12 @@
 baseURL = 'https://dowrave.github.io'
 languageCode = 'ko-kr'
-title = 'dowrave(Waltwaez)의 블로그'
+title = 'Waltwaez(dowrave)의 블로그'
 theme = 'github-style'
 pygmentsCodeFences = true # 코드 블록 구문 강조 기능
 pygmentsUseClasses = true # 코드 강조 스타일 <style> 대신 CSS로 관리 
 
 [params]
-  author = "HTLee"
+  author = "Waltwaez"
   description = "사이트 테스트 중"
   github = "dowrave"
   # linkedin = "dowrave"
@@ -18,7 +18,7 @@ pygmentsUseClasses = true # 코드 강조 스타일 <style> 대신 CSS로 관리
   # 여기 경로는 public/이 기준임 - theme으로 들어가면 없음
   favicon = "/images/favicon.png"
   avatar = "/images/myAvatar.png"
-  headerIcon = "/images/GitHub-Mark-Light-32px.png"
+  headerIcon = "/images/favicon.png"
   location = "Goyang, Korea"
   enableGitalk = false
   custom_css = ["css/custom.css"]
